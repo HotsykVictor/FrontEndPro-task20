@@ -87,7 +87,7 @@ recipeList.forEach((recipe) => Book.addRecipe(recipe));
 console.log(Book.getRecipeList());
 
 console.log(
-  Book.findRecipeByTime("60")
+  Book.findRecipeByTime(60)
     .map((recipe) => recipe.name)
     .join(", ") + " - можна приготувати за цей час"
 );
